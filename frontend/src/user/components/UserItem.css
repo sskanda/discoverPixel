@@ -2,6 +2,9 @@
   margin: 1rem;
   width: calc(45% - 2rem);
   min-width: 17.5rem;
+  box-shadow: rgba(248, 89, 26, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 .user-item a {
@@ -17,7 +20,7 @@
 
 .user-item a:hover,
 .user-item a:active {
-  background: #7678ed;
+  background: #ff923e;
 }
 
 .user-item__content {
