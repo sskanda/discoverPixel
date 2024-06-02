@@ -21,6 +21,7 @@
 .user-item a:hover,
 .user-item a:active {
   background: #ff923e;
+  transform: scale(1.05);
 }
 
 .user-item__content {
