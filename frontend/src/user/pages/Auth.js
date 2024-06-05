@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-
+import { useNavigate } from "react-router-dom";
 import Card from "../../shared/components/UIElements/Card";
 import Input from "../../shared/components/FormElements/Input";
 import Button from "../../shared/components/FormElements/Button";
@@ -19,7 +19,7 @@ const Auth = () => {
   const auth = useContext(AuthContext);
   const [isLoginMode, setIsLoginMode] = useState(true);
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
-
+  const navigate = useNavigate();
   const [formState, inputHandler, setFormData] = useForm(
     {
       email: {
@@ -75,6 +75,7 @@ const Auth = () => {
           }
         );
         auth.login(responseData.user.id);
+        navigate("/");
       } catch (err) {}
     } else {
       try {
