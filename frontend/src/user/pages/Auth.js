@@ -93,6 +93,7 @@ const Auth = () => {
         );
 
         auth.login(responseData.user.id);
+        navigate("/");
       } catch (err) {}
     }
   };
