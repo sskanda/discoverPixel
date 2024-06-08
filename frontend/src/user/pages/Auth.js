@@ -15,7 +15,6 @@ import { useForm } from "../../shared/hooks/form-hook";
 import { useHttpClient } from "../../shared/hooks/http-hook";
 import { AuthContext } from "../../shared/context/auth-context";
 import "./Auth.css";
-import pin from "../../shared/images/pin.png";
 
 const Auth = () => {
   const auth = useContext(AuthContext);
@@ -108,7 +107,7 @@ const Auth = () => {
       <ErrorModal error={error} onClear={clearError} />
       <Card className="authentication">
         {isLoading && <LoadingSpinner asOverlay />}
-        <h2>Login Required</h2>
+        {isLoginMode ? <h2>Login Required</h2> : <h2>SignUp</h2>}
         <hr />
         <form onSubmit={authSubmitHandler}>
           {!isLoginMode && (
