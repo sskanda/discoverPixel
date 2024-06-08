@@ -21,3 +21,6 @@
   height: 100%;
   object-fit: cover;
 }
+.image-upload__rounded {
+  border-radius: 100%;
+}
