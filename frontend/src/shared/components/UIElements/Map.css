@@ -1,4 +1,11 @@
+.map-marker {
+  background-size: cover;
+  width: 32px;
+  height: 40px;
+  display: block;
+}
+
 .map {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }

@@ -18,7 +18,8 @@ const UserPlaces = () => {
         const responseData = await sendRequest(
           `http://localhost:5000/api/places/user/${userId}`
         );
-        setLoadedPlaces(responseData.places);
+        let places = responseData != null ? responseData.places : null;
+        setLoadedPlaces(places);
       } catch (err) {}
     };
     fetchPlaces();
