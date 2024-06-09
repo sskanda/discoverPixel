@@ -23,7 +23,7 @@ const PlaceList = (props) => {
   }
 
   return (
-    <ul className="place-list">
+    <ul className="place-list center">
       {props.items.map((place) => (
         <PlaceItem
           key={place.id}

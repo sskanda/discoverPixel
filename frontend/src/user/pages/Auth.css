@@ -38,8 +38,7 @@
   margin-top: -3em;
 }
 .screen-1 .email input {
-  outline: none;
-  border: none;
+  border-color: rgb(228, 225, 225);
 }
 
 .screen-1 .password {
@@ -53,8 +52,7 @@
   color: #4d4d4d;
 }
 .screen-1 .password input {
-  outline: none;
-  border: none;
+  border-color: rgb(228, 225, 225);
 }
 
 .screen-1 .login {

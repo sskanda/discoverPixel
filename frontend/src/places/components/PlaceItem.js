@@ -85,9 +85,24 @@ const PlaceItem = (props) => {
             />
           </div>
           <div className="place-item__info">
-            <h2>{props.title}</h2>
-            <h3>{props.address}</h3>
-            <p>{props.description}</p>
+            <h2
+              style={{
+                textAlign: "left",
+                fontSize: "2rem",
+                fontWeight: 600,
+                color: "#091434",
+              }}
+            >
+              {props.title}
+            </h2>
+            <h3 style={{ textAlign: "left" }}>
+              <ion-icon
+                style={{ color: "red" }}
+                name="location-sharp"
+              ></ion-icon>
+              {props.address}
+            </h3>
+            <p style={{ textAlign: "left" }}>{props.description}</p>
           </div>
           <div className="place-item__actions">
             <Button inverse onClick={openMapHandler}>
