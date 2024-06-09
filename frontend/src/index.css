@@ -5,12 +5,14 @@
 }
 
 html {
-  font-family: "Anton", sans-serif;
+  * {
+    font-family: "Poppins";
+  }
 }
 
 body {
   margin: 0;
-  background: #ffffff;
+  background: #000000;
 }
 
 .slide-in-left-enter {

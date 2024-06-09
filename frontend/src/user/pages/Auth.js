@@ -15,6 +15,7 @@ import { useForm } from "../../shared/hooks/form-hook";
 import { useHttpClient } from "../../shared/hooks/http-hook";
 import { AuthContext } from "../../shared/context/auth-context";
 import "./Auth.css";
+import login_logo from "../../shared/images/login-logo.png";
 
 const Auth = () => {
   const auth = useContext(AuthContext);
@@ -105,10 +106,18 @@ const Auth = () => {
   return (
     <React.Fragment>
       <ErrorModal error={error} onClear={clearError} />
-      <Card className="authentication">
+      <Card className="authentication screen-1">
         {isLoading && <LoadingSpinner asOverlay />}
-        {isLoginMode ? <h2>Login Required</h2> : <h2>SignUp</h2>}
-        <hr />
+        {isLoginMode ? (
+          <div className="login_logo">
+            <img src={login_logo} alt="Login" />
+          </div>
+        ) : (
+          <div style={{ textAlign: "center" }}>
+            <h2>SignUp</h2>
+          </div>
+        )}
+
         <form onSubmit={authSubmitHandler}>
           {!isLoginMode && (
             <Input
@@ -124,31 +133,44 @@ const Auth = () => {
           {!isLoginMode && (
             <ImageUpload center id="image" onInput={inputHandler} isLoginPage />
           )}
-          <Input
-            element="input"
-            id="email"
-            type="email"
-            label="E-Mail"
-            validators={[VALIDATOR_EMAIL()]}
-            errorText="Please enter a valid email address."
-            onInput={inputHandler}
-          />
-          <Input
-            element="input"
-            id="password"
-            type="password"
-            label="Password"
-            validators={[VALIDATOR_MINLENGTH(6)]}
-            errorText="Please enter a valid password, at least 6 characters."
-            onInput={inputHandler}
-          />
-          <Button type="submit" disabled={!formState.isValid}>
-            {isLoginMode ? "LOGIN" : "SIGNUP"}
-          </Button>
+          <div className={isLoginMode && "login_form"}>
+            <div className={isLoginMode && "email"}>
+              <Input
+                element="input"
+                id="email"
+                type="email"
+                label="Email"
+                validators={[VALIDATOR_EMAIL()]}
+                errorText="Please enter a valid email address."
+                onInput={inputHandler}
+              ></Input>
+            </div>
+
+            <div class={isLoginMode && "password"}>
+              <Input
+                element="input"
+                id="password"
+                type="password"
+                label="Password"
+                validators={[VALIDATOR_MINLENGTH(6)]}
+                errorText="Please enter a valid password, at least 6 characters."
+                onInput={inputHandler}
+              />
+            </div>
+
+            <div>
+              <Button type="submit" disabled={!formState.isValid}>
+                {isLoginMode ? "LOGIN" : "SIGNUP"}
+              </Button>
+            </div>
+          </div>
         </form>
-        <Button inverse onClick={switchModeHandler}>
-          SWITCH TO {isLoginMode ? "SIGNUP" : "LOGIN"}
-        </Button>
+
+        <div style={{ textAlign: "left" }}>
+          <Button inverse onClick={switchModeHandler}>
+            <span>SWITCH TO {isLoginMode ? "SIGNUP" : "LOGIN"}</span>
+          </Button>
+        </div>
       </Card>
     </React.Fragment>
   );
