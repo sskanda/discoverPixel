@@ -7,7 +7,6 @@ import mapboxgl from "mapbox-gl";
 import "./Map.css";
 
 const Map = (props) => {
-  console.log(props.location);
   const mapContainer = useRef(null);
   const map = useRef(null);
   mapboxgl.accessToken =
