@@ -46,8 +46,7 @@ app.use((error, req, res, next) => {
   res.status(error.code || 500);
   res.json({ message: error.message || "An unknown error occurred!" });
 });
-const uri =
-  "mongodb+srv://skz:admin@cluster0.c7xj5qh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = `mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_USER_PASSWORD}@cluster0.c7xj5qh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 const clientOptions = {
   serverApi: { version: "1", strict: true, deprecationErrors: true },
