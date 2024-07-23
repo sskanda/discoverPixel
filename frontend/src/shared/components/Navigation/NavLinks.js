@@ -32,6 +32,9 @@ const NavLinks = (props) => {
           <button onClick={auth.logout}>LOGOUT</button>
         </li>
       )}
+      <li>
+        <NavLink to="/search">SEARCH</NavLink>
+      </li>
     </ul>
   );
 };
