@@ -1,0 +1,91 @@
+PlaceId,PlaceName,Country,Description,ImageUrl
+1,Eiffel Tower,France,Iconic symbol of Paris.,https://example.com/eiffel.jpg
+2,Great Wall,China,Ancient wall stretching across northern China.,https://example.com/greatwall.jpg
+3,Machu Picchu,Peru,Historic Inca citadel in the Andes Mountains.,https://example.com/machupicchu.jpg
+4,Grand Canyon,USA,Famous canyon in Arizona.,https://example.com/grandcanyon.jpg
+5,Sydney Opera House,Australia,Iconic performing arts center in Sydney.,https://example.com/sydneyopera.jpg
+6,Statue of Liberty,USA,Famous statue in New York Harbor.,https://example.com/statueofliberty.jpg
+7,Colosseum,Italy,Ancient amphitheater in Rome.,https://example.com/colosseum.jpg
+8,Christ the Redeemer,Brazil,Large statue of Jesus Christ in Rio de Janeiro.,https://example.com/christtheredeemer.jpg
+9,Taj Mahal,India,White marble mausoleum in Agra.,https://example.com/tajmahal.jpg
+10,Pyramids of Giza,Egypt,Ancient pyramids in Giza.,https://example.com/pyramidsofgiza.jpg
+11,Mount Fuji,Japan,Iconic volcanic mountain in Japan.,https://example.com/mountfuji.jpg
+12,Stonehenge,UK,Prehistoric stone circle in Wiltshire.,https://example.com/stonehenge.jpg
+13,Santorini,Greece,Beautiful island known for its white-washed buildings.,https://example.com/santorini.jpg
+14,Niagara Falls,Canada/USA,Famous group of waterfalls on the border of Canada and the USA.,https://example.com/niagarafalls.jpg
+15,Petra,Jordan,Ancient city carved into pink sandstone cliffs.,https://example.com/petra.jpg
+16,Venice,Italy,City known for its canals and architecture.,https://example.com/venice.jpg
+17,Buckingham Palace,UK,London residence of the British monarch.,https://example.com/buckingham.jpg
+18,Chichen Itza,Mexico,Large pre-Columbian archaeological site.,https://example.com/chichenitza.jpg
+19,Angkor Wat,Cambodia,Largest religious monument in the world.,https://example.com/angkorwat.jpg
+20,Mount Everest,Nepal/China,Highest mountain in the world.,https://example.com/mounteverest.jpg
+21,Burj Khalifa,UAE,Tallest building in the world.,https://example.com/burjkhalifa.jpg
+22,Hagia Sophia,Turkey,Historic museum and former mosque in Istanbul.,https://example.com/hagiasophia.jpg
+23,Sagrada Familia,Spain,Large unfinished Roman Catholic church in Barcelona.,https://example.com/sagradafamilia.jpg
+24,Acropolis,Greece,Ancient citadel in Athens.,https://example.com/acropolis.jpg
+25,Golden Gate Bridge,USA,Iconic suspension bridge in San Francisco.,https://example.com/goldengatebridge.jpg
+26,Louvre Museum,France,World's largest art museum in Paris.,https://example.com/louvre.jpg
+27,Alhambra,Spain,Palace and fortress complex in Granada.,https://example.com/alhambra.jpg
+28,Mount Kilimanjaro,Tanzania,Highest mountain in Africa.,https://example.com/kilimanjaro.jpg
+29,Versailles Palace,France,Royal residence near Paris.,https://example.com/versailles.jpg
+30,Banff National Park,Canada,National park in the Canadian Rockies.,https://example.com/banff.jpg
+31,Yellowstone National Park,USA,First national park in the world.,https://example.com/yellowstone.jpg
+32,Galapagos Islands,Ecuador,Archipelago known for its unique wildlife.,https://example.com/galapagos.jpg
+33,Sistine Chapel,Vatican City,Famous chapel with Michelangelo's frescoes.,https://example.com/sistinechapel.jpg
+34,Prague Castle,Czech Republic,Largest ancient castle in the world.,https://example.com/praguecastle.jpg
+35,Hagia Sophia,Turkey,Historic museum and former mosque in Istanbul.,https://example.com/hagiasophia.jpg
+36,Rapa Nui National Park,Chile,World Heritage site on Easter Island.,https://example.com/rapanuinationalpark.jpg
+37,Bryce Canyon,USA,Famous for its unique rock formations called hoodoos.,https://example.com/brycecanyon.jpg
+38,Reed Flute Cave,China,Natural limestone cave with multicolored lighting.,https://example.com/reedflutecave.jpg
+39,Mount Etna,Italy,Active volcano on the east coast of Sicily.,https://example.com/mountetna.jpg
+40,Bryggen,Norway,Historic harbour district in Bergen.,https://example.com/bryggen.jpg
+41,Lake Louise,Canada,Glacial lake in Banff National Park.,https://example.com/lakelouise.jpg
+42,Athabasca Glacier,Canada,Large glacier located in the Canadian Rockies.,https://example.com/athabascaglacier.jpg
+43,Rotorua,New Zealand,City on New Zealand’s North Island known for its geothermal activity.,https://example.com/rotorua.jpg
+44,Monteverde Cloud Forest,Costa Rica,Famous for its biodiversity and cloud forest.,https://example.com/monteverdecloudforest.jpg
+45,Napa Valley,USA,Region in California known for its vineyards.,https://example.com/napavalley.jpg
+46,Monument Valley,USA,Region of the Colorado Plateau characterized by a cluster of vast sandstone buttes.,https://example.com/monumentvalley.jpg
+47,Great Ocean Road,Australia,Scenic drive along the south-eastern coast of Australia.,https://example.com/greatoceanroad.jpg
+48,Queenstown,New Zealand,Resort town known for adventure sports.,https://example.com/queenstown.jpg
+49,Ngorongoro Crater,Tanzania,World's largest inactive volcanic caldera.,https://example.com/ngorongorocrater.jpg
+50,Reykjavik,Iceland,Capital of Iceland known for its Viking history.,https://example.com/reykjavik.jpg
+51,Masada,Israel,Ancient fortress on a plateau in the Judaean Desert.,https://example.com/masada.jpg
+52,Lofoten Islands,Norway,Archipelago known for its dramatic scenery.,https://example.com/lofotenislands.jpg
+53,Bagan,Myanmar,Ancient city with thousands of Buddhist temples.,https://example.com/bagan.jpg
+54,Mount Cook,New Zealand,Highest mountain in New Zealand.,https://example.com/mountcook.jpg
+55,Franz Josef Glacier,New Zealand,Glacier located in Westland Tai Poutini National Park.,https://example.com/franzjosefglacier.jpg
+56,Alcatraz Island,USA,Historic island and former prison in San Francisco Bay.,https://example.com/alcatraz.jpg
+57,Matterhorn,Switzerland,Famous mountain in the Alps.,https://example.com/matterhorn.jpg
+58,Haleakala National Park,USA,National park in Hawaii known for its volcanic landscape.,https://example.com/haleakala.jpg
+59,Petronas Towers,Malaysia,Twin skyscrapers in Kuala Lumpur.,https://example.com/petronastowers.jpg
+60,Arashiyama Bamboo Grove,Japan,Famous bamboo forest in Kyoto.,https://example.com/arashiyama.jpg
+61,Plitvice Lakes,Croatia,National park known for its lakes and waterfalls.,https://example.com/plitvicelakes.jpg
+62,Torres del Paine,Chile,"National park known for its mountains, glaciers, and lakes.",https://example.com/torresdelpaine.jpg
+63,Cinque Terre,Italy,Picturesque coastal villages on the Italian Riviera.,https://example.com/cinqueterre.jpg
+64,Lake Bled,Slovenia,Glacial lake known for its island church.,https://example.com/lakebled.jpg
+65,Galway,Ireland,Harbor city on Ireland’s west coast.,https://example.com/galway.jpg
+66,Kilimanjaro,Tanzania,Highest mountain in Africa.,https://example.com/kilimanjaro.jpg
+67,Keukenhof,Netherlands,Large flower garden known for its tulips.,https://example.com/keukenhof.jpg
+68,Hwange National Park,Zimbabwe,Famous for its wildlife and large elephant herds.,https://example.com/hwange.jpg
+69,Cinque Terre,Italy,Picturesque coastal villages on the Italian Riviera.,https://example.com/cinqueterre.jpg
+70,Banff National Park,Canada,National park in the Canadian Rockies.,https://example.com/banff.jpg
+71,Bora Bora,French Polynesia,Small island known for its luxury resorts.,https://example.com/borabora.jpg
+72,Moeraki Boulders,New Zealand,Large spherical boulders on Koekohe Beach.,https://example.com/moerakiboulders.jpg
+73,Antelope Canyon,USA,Famous slot canyon in Arizona.,https://example.com/antelopecanyon.jpg
+74,Moraine Lake,Canada,Glacially-fed lake in Banff National Park.,https://example.com/morainelake.jpg
+75,Wulingyuan,China,Scenic area known for its quartzite sandstone pillars.,https://example.com/wulingyuan.jpg
+76,Nusa Penida,Indonesia,Island known for its beaches and cliff formations.,https://example.com/nusapenida.jpg
+77,Ngorongoro Crater,Tanzania,World's largest inactive volcanic caldera.,https://example.com/ngorongorocrater.jpg
+78,Queenstown,New Zealand,Resort town known for adventure sports.,https://example.com/queenstown.jpg
+79,Great Ocean Road,Australia,Scenic drive along the south-eastern coast of Australia.,https://example.com/greatoceanroad.jpg
+80,Monument Valley,USA,Region of the Colorado Plateau characterized by a cluster of vast sandstone buttes.,https://example.com/monumentvalley.jpg
+81,Napa Valley,USA,Region in California known for its vineyards.,https://example.com/napavalley.jpg
+82,Monteverde Cloud Forest,Costa Rica,Famous for its biodiversity and cloud forest.,https://example.com/monteverdecloudforest.jpg
+83,Rotorua,New Zealand,City on New Zealand’s North Island known for its geothermal activity.,https://example.com/rotorua.jpg
+84,Athabasca Glacier,Canada,Large glacier located in the Canadian Rockies.,https://example.com/athabascaglacier.jpg
+85,Lake Louise,Canada,Glacial lake in Banff National Park.,https://example.com/lakelouise.jpg
+86,Bryggen,Norway,Historic harbour district in Bergen.,https://example.com/bryggen.jpg
+87,Mount Etna,Italy,Active volcano on the east coast of Sicily.,https://example.com/mountetna.jpg
+88,Reed Flute Cave,China,Natural limestone cave with multicolored lighting.,https://example.com/reedflutecave.jpg
+89,Bryce Canyon,USA,Famous for its unique rock formations called hoodoos.,https://example.com/brycecanyon.jpg
+90,Rapa Nui National Park,Chile,World Heritage site on Easter Island.,https://example.com/rapanuinationalpark.jpg
