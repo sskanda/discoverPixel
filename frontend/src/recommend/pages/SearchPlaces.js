@@ -43,6 +43,21 @@ const SearchPlaces = () => {
     }
   };
 
+  const customStyles = {
+    option: (provided) => ({
+      ...provided,
+      textAlign: "left",
+    }),
+    menu: (provided) => ({
+      ...provided,
+      textAlign: "left",
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      textAlign: "left",
+    }),
+  };
+
   return (
     <div className="container">
       <h1 style={{ color: "white", display: "flex", alignItems: "center" }}>
@@ -54,6 +69,7 @@ const SearchPlaces = () => {
         onChange={setSelectedPlace}
         placeholder="Type or select a place"
         className="select-container"
+        styles={customStyles}
       />
       <button onClick={fetchRecommendations} disabled={!selectedPlace}>
         Show Recommendation
