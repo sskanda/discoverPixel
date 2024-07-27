@@ -9,6 +9,7 @@ import MainNavigation from "./shared/components/Navigation/MainNavigation";
 import { AuthContext } from "./shared/context/auth-context";
 import LoadingSpinner from "./shared/components/UIElements/LoadingSpinner";
 import SearchPlaces from "./recommend/pages/SearchPlaces";
+import PlaceDetails from "./recommend/pages/PlaceDetails";
 
 function App() {
   const UserPlaces = React.lazy(() => import("./places/pages/UserPlaces"));
@@ -46,6 +47,7 @@ function App() {
         <Route path="/:userId/places" element={<UserPlaces />}></Route>
         <Route path="/auth" element={<Auth />}></Route>
         <Route path="/search" element={<SearchPlaces />}></Route>
+        <Route path="/place/:placeName" element={<PlaceDetails />} />
       </Routes>
     );
   }
