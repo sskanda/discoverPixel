@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Select from "react-select";
 import { Link } from "react-router-dom";
+import { MdTrendingUp } from "react-icons/md";
 import "./SearchPlaces.css";
+import LoadingSpinner from "../../shared/components/UIElements/LoadingSpinner";
 
 const SearchPlaces = () => {
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [recommendations, setRecommendations] = useState([]);
   const [places, setPlaces] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchPlaces = async () => {
@@ -27,6 +30,7 @@ const SearchPlaces = () => {
   }, []);
 
   const fetchRecommendations = async () => {
+    setLoading(true);
     try {
       const response = await axios.post("http://localhost:5000/recommend", {
         place_name: selectedPlace.value,
@@ -34,12 +38,17 @@ const SearchPlaces = () => {
       setRecommendations(response.data);
     } catch (error) {
       console.error("Error fetching recommendations:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className="container">
-      <h1>Trending</h1>
+      <h1 style={{ color: "white", display: "flex", alignItems: "center" }}>
+        <MdTrendingUp style={{ marginRight: "10px", fontSize: "24px" }} />
+        Trending
+      </h1>
       <Select
         options={places}
         onChange={setSelectedPlace}
@@ -50,15 +59,19 @@ const SearchPlaces = () => {
         Show Recommendation
       </button>
 
-      <div className="results-container">
-        {recommendations.recommended_places &&
-          recommendations.recommended_places.map((place, index) => (
-            <Link to={`/place/${place}`} key={index} className="result-card">
-              <img src={recommendations.poster_url[index]} alt={place} />
-              <p>{place}</p>
-            </Link>
-          ))}
-      </div>
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
+        <div className="results-container">
+          {recommendations.recommended_places &&
+            recommendations.recommended_places.map((place, index) => (
+              <Link to={`/place/${place}`} key={index} className="result-card">
+                <img src={recommendations.poster_url[index]} alt={place} />
+                <p>{place}</p>
+              </Link>
+            ))}
+        </div>
+      )}
     </div>
   );
 };
