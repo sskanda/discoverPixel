@@ -52,7 +52,7 @@ const SearchPlaces = () => {
 
       <div className="results-container">
         {recommendations.recommended_places &&
-          recommendations.recommended_palces.map((place, index) => (
+          recommendations.recommended_places.map((place, index) => (
             <Link to={`/place/${place}`} key={index} className="result-card">
               <img src={recommendations.poster_url[index]} alt={place} />
               <p>{place}</p>
