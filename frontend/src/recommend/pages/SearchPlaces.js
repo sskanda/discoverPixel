@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Select from "react-select";
+import { Link } from "react-router-dom";
 import "./SearchPlaces.css";
 
 const SearchPlaces = () => {
@@ -50,12 +51,12 @@ const SearchPlaces = () => {
       </button>
 
       <div className="results-container">
-        {recommendations.recommended_books &&
-          recommendations.recommended_books.map((book, index) => (
-            <div key={index} className="result-card">
-              <img src={recommendations.poster_url[index]} alt={book} />
-              <p>{book}</p>
-            </div>
+        {recommendations.recommended_places &&
+          recommendations.recommended_palces.map((place, index) => (
+            <Link to={`/place/${place}`} key={index} className="result-card">
+              <img src={recommendations.poster_url[index]} alt={place} />
+              <p>{place}</p>
+            </Link>
           ))}
       </div>
     </div>

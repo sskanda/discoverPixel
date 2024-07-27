@@ -18,7 +18,7 @@
 }
 .select-container {
   width: 600px;
-  margin: 0 auto; /* Center the search bar */
+  margin: 0 auto;
 }
 
 .container {
@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@ h1 {
 
 .result-card {
   background-color: #1c1c1c;
-  border: 2px solid #28a745; /* Green border */
+  border: 2px solid #28a745;
   border-radius: 8px;
   overflow: hidden;
   width: 200px;
@@ -67,15 +67,28 @@ h1 {
   color: #fff;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .result-card img {
   width: 100%;
   height: 300px;
-  object-fit: cover; /* Ensures the image covers the card area while maintaining aspect ratio */
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
 .result-card p {
   padding: 10px;
   margin: 0;
+  color: #fff;
+}
+
+.result-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result-card:hover img {
+  opacity: 0.8;
 }
