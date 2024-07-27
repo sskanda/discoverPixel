@@ -53,15 +53,15 @@ const PlaceDetails = () => {
     setTimeout(() => {
       navigate(`/place/${placeName}`);
       setIsLoading(false);
-    }, 2000);
+    }, 500);
   };
 
   if (isLoading) {
-    return <LoadingSpinner asOverlay></LoadingSpinner>;
+    return <LoadingSpinner asOverlay />;
   }
 
   if (!placeDetails) {
-    return <LoadingSpinner asOverlay></LoadingSpinner>;
+    return <LoadingSpinner asOverlay />;
   }
 
   return (
@@ -78,7 +78,7 @@ const PlaceDetails = () => {
 
       {/* New Section for Recommendations */}
       <div className="recommendations-section">
-        <h2>You May Also Like</h2>
+        <h2>YOU MAY ALSO LIKE</h2>
         <div className="recommendations-container">
           {recommendations.length > 0 ? (
             recommendations.map((recommendation, index) => (
@@ -92,7 +92,9 @@ const PlaceDetails = () => {
                   alt={recommendation.name}
                   className="recommendation-image"
                 />
-                <h3>{recommendation.name}</h3>
+                <div className="recommendation-info">
+                  <h3>{recommendation.name}</h3>
+                </div>
               </div>
             ))
           ) : (
