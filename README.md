@@ -1,5 +1,5 @@
 # Travel Recommender
-Platform where people can post and share new travel destination places integrated with real time maps.
+Platform where people can post and share new travel destination places based on multiple users recommendations which is also integrated with real time maps.
 This is live here at https://discovery-pixel.netlify.app/ (might take some time to load as it's hosted on free tier).
 
 https://github.com/sskanda/discoverPixel/assets/57634365/cc0c1025-3f72-419d-b939-e1e70de80248
