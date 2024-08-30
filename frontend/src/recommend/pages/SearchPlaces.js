@@ -15,7 +15,9 @@ const SearchPlaces = () => {
   useEffect(() => {
     const fetchPlaces = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/places");
+        const response = await axios.get(
+          `${process.env.REACT_APP_RECOMMENDATION_BASE_URL}/places`
+        );
         const options = response.data.map((place) => ({
           value: place,
           label: place,
@@ -32,9 +34,12 @@ const SearchPlaces = () => {
   const fetchRecommendations = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:5000/recommend", {
-        place_name: selectedPlace.value,
-      });
+      const response = await axios.post(
+        `${process.env.REACT_APP_RECOMMENDATION_BASE_URL}/recommend`,
+        {
+          place_name: selectedPlace.value,
+        }
+      );
       setRecommendations(response.data);
     } catch (error) {
       console.error("Error fetching recommendations:", error);

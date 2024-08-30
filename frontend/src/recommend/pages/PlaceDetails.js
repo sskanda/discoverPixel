@@ -15,7 +15,7 @@ const PlaceDetails = () => {
     const fetchPlaceDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/place/${placeName}`
+          `${process.env.REACT_APP_RECOMMENDATION_BASE_URL}/place/${placeName}`
         );
         setPlaceDetails(response.data);
       } catch (error) {
@@ -25,9 +25,12 @@ const PlaceDetails = () => {
 
     const fetchRecommendations = async () => {
       try {
-        const response = await axios.post("http://localhost:5000/recommend", {
-          place_name: placeName,
-        });
+        const response = await axios.post(
+          `${process.env.REACT_APP_RECOMMENDATION_BASE_URL}/recommend`,
+          {
+            place_name: placeName,
+          }
+        );
         const recommendedPlaces = response.data.recommended_places;
         const posterUrls = response.data.poster_url;
 
@@ -56,11 +59,7 @@ const PlaceDetails = () => {
     }, 500);
   };
 
-  if (isLoading) {
-    return <LoadingSpinner asOverlay />;
-  }
-
-  if (!placeDetails) {
+  if (isLoading || !placeDetails) {
     return <LoadingSpinner asOverlay />;
   }
 

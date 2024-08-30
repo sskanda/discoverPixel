@@ -33,7 +33,7 @@ const NavLinks = (props) => {
         </li>
       )}
       <li>
-        <NavLink to="/search">SEARCH</NavLink>
+        <NavLink to="/search">RECOMMEND</NavLink>
       </li>
     </ul>
   );
