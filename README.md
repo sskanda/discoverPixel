@@ -14,7 +14,7 @@ This is live here at https://discovery-pixel.netlify.app/ (might take some time 
 ## Preview
 
 ### Explore
-![image](https://github.com/user-attachments/assets/21165c73-0f1a-4f15-85f7-862e036b3e24)
+![image](https://github.com/user-attachments/assets/c037bc1c-7669-4f6e-83c3-052c537e2d89)
 
 
 ### Login
