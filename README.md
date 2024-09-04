@@ -1,6 +1,6 @@
 # Travel Recommender
 Platform where people can post and share new travel destination places based on multiple users recommendations which is also integrated with real time maps.
-This is live here at https://discovery-pixel.netlify.app/ (might take a minute to load as it's hosted on free tier).
+This is live here at https://discovery-pixel.netlify.app/ 
 
 ## Features
 - Collaborative Based recommendation
