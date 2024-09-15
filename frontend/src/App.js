@@ -1,4 +1,4 @@
-import React, { useState, useCallback, Suspense } from "react";
+import React, { useState, useCallback, useEffect, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Users from "./user/pages/Users";
 // import NewPlaces from "./places/pages/NewPlaces";
@@ -29,28 +29,45 @@ function App() {
     setUserId(null);
   }, []);
 
+  // Log view on component mount
+  useEffect(() => {
+    const logView = async () => {
+      try {
+        await fetch(
+          `${process.env.REACT_APP_BACKEND_URL}/api/views/viewcount`,
+          { method: "GET" }
+        );
+      } catch (error) {
+        console.error("Error logging view:", error);
+      }
+    };
+
+    logView();
+  }, []); // Runs once on component mount
+
   let routes;
   if (isLoggedIn) {
     routes = (
       <Routes>
-        <Route path="/" element={<Users />}></Route>
-        <Route path="/:userId/places" element={<UserPlaces />}></Route>
-        <Route path="/places/new" element={<NewPlaces />}></Route>
-        <Route path="/places/:placeId" element={<UpdatePlace />}></Route>
-        <Route path="/search" element={<SearchPlaces />}></Route>
+        <Route path="/" element={<Users />} />
+        <Route path="/:userId/places" element={<UserPlaces />} />
+        <Route path="/places/new" element={<NewPlaces />} />
+        <Route path="/places/:placeId" element={<UpdatePlace />} />
+        <Route path="/search" element={<SearchPlaces />} />
       </Routes>
     );
   } else {
     routes = (
       <Routes>
-        <Route path="/" element={<Users />}></Route>
-        <Route path="/:userId/places" element={<UserPlaces />}></Route>
-        <Route path="/auth" element={<Auth />}></Route>
-        <Route path="/search" element={<SearchPlaces />}></Route>
+        <Route path="/" element={<Users />} />
+        <Route path="/:userId/places" element={<UserPlaces />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/search" element={<SearchPlaces />} />
         <Route path="/place/:placeName" element={<PlaceDetails />} />
       </Routes>
     );
   }
+
   return (
     <AuthContext.Provider
       value={{
@@ -66,7 +83,7 @@ function App() {
           <Suspense
             fallback={
               <div className="center">
-                <LoadingSpinner></LoadingSpinner>
+                <LoadingSpinner />
               </div>
             }
           >
