@@ -3,7 +3,7 @@ Platform where people can post and share new travel destination places based on 
 This is live here at https://discovery-pixel.netlify.app/ 
 
 ## Features
-- Collaborative Based recommendation
+- Collaborative-based recommendations, i.e., recommendations generated from user ratings and preferences
 - User registration and login
 - User authentication and authorization
 - Uploading and managing user images
